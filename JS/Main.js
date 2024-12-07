@@ -1,5 +1,6 @@
 let searchInput = document.querySelector("#Search");
 let searchbtn = document.querySelector("#submit");
+let alertMsg = document.querySelector("#alertMsg");
 
 searchInput.addEventListener("input", function () {
     let city = searchInput.value;
@@ -13,12 +14,20 @@ getWeather("cairo");
 let allWeather = []
 
 async function getWeather(city) {
-    let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=054b0161f4d34d1d855153330240412&q=${city}&days=3`);
+    try {
+        alertMsg.classList.add("d-none")
+        let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=054b0161f4d34d1d855153330240412&q=${city}&days=3`);
 
-    if (response.ok) {
-        let data = await response.json();
-        displayData(data.forecast.forecastday, city);
+        if (response.ok) {
+            let data = await response.json();
+            displayData(data.forecast.forecastday, city);
 
+        } else {
+            alertMsg.classList.remove("d-none")
+        }
+    }
+    catch (error) {
+        alertMsg.classList.remove("d-none")
     }
 }
 function displayData(allWeather, city) {
