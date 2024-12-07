@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!----------------Google Fonts------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <!----------------Font Awesome----------------->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!---------------BootStrap----------------->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!-----------------Style------------------------>
+    <link rel="stylesheet" href="./CSS/Style.css">
+</head>
+
+<body>
+
+    <!------------------------ Start Nav --------------------------------->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="#" class="cloud-icon ms-5 pe-3">
+                    <img src="./logo@2x.png" alt="cloud icon">
+                    <a class="navbar-brand text-white" href="#">Weather
+                        <p class="text-white tagline">tagline goes here</p>
+                    </a>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-5 mt-5 me-5">
+                    <li class="nav-item">
+                        <a class="nav-link active text-info rounded-pill me-5" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white rounded-pill me-5" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white rounded-pill me-5" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white rounded-pill me-5" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white rounded-pill me-5" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------------------------ End Nav --------------------------------->
+
+    <!------------------------ Start Header --------------------------------->
+
+    <header class="Header pt-5 pb-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="search-input d-flex justify-content-between position-relative">
+                        <input type="search" placeholder="Find your location..." id="Search"
+                            class="form-control rounded-pill">
+                        <button value="Find" id="submit" type="submit" class="rounded-pill bg-info">Find</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="Weather-table mt-3 pt-4">
+                <div class="container">
+                    <div class="row justify-content-center" id="row-id">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+    <!-- <header class="header">
+        <div class="container">
+            <div class="search-input">
+                <input type="search" placeholder="Find your location..." />
+                <button type="submit">Find</button>
+            </div>
+    
+            <div class="weather-grid">
+                <div class="weather-card Monday">
+                    <div class="day">Monday</div>
+                    <div class="date">2 December</div>
+                    <img src="./113 (1).jpg" alt="moon">
+                    <div class="temperature">16.1°C</div>
+                    <div class="description">Clear</div>
+                    <div class="details">
+                        <span><img src="./icon-umberella.png" alt="umbrella"> 20%</span>
+                        <span><img src="./icon-wind.png" alt="wind"> 18km/h</span>
+                        <span><img src="./icon-compass.png" alt="compass"> East</span>
+                    </div>
+                </div>
+                <div class="weather-card Tuesday">
+                    <div class="day">Tuesday</div>
+                    <img src="./113 (1).png" alt="sun">
+                    <div class="temperature">21.6°C</div>
+                    <div class="description">Sunny</div>
+                </div>
+                <div class="weather-card Wednesday">
+                    <div class="day">Wednesday</div>
+                    <img src="./113 (1).png" alt="sun">
+                    <div class="temperature">22.1°C</div>
+                    <div class="description">Sunny</div>
+                </div>
+            </div>
+        </div>
+    </header> -->
+
+
+    <!------------------------ End Header --------------------------------->
+
+    <!------------------------ Start Footer --------------------------------->
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="email-input  position-relative">
+                        <input type="text" placeholder="Enter your email to subscribe..." id="email"
+                            class="form-control rounded-pill">
+                        <button value="email" id="submit" type="submit" class="rounded-pill bg-info">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="social-icons d-flex justify-content-center align-items-center">
+                        <a href="#" class="icon-wrapper d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-facebook-f fs-5"></i>
+                        </a>
+                        <a href="#" class="icon-wrapper d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-twitter fs-5"></i>
+                        </a>
+                        <a href="#" class="icon-wrapper d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-google-plus fs-5"></i>
+                        </a>
+                        <a href="#" class="icon-wrapper d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-pinterest fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="small pt-3 pb-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!------------------------ End Footer --------------------------------->
+
+    <!---------------------Scribt-------------------->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/Main.js"></script>
+    <!---------------------Scribt-------------------->
+
+</body>
+
+</html>

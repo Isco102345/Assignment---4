@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!----------------Google Fonts------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <!----------------Font Awesome----------------->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!---------------BootStrap----------------->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <!-----------------Style------------------------>
+    <link rel="stylesheet" href="./CSS/Style.css">
+</head>
+
+<body>
+
+    <!------------------------ Start Nav --------------------------------->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="#" class="cloud-icon ms-5 pe-3">
+                    <img src="./logo@2x.png" alt="cloud icon">
+                    <a class="navbar-brand text-white" href="#">Weather
+                        <p class="text-white tagline">tagline goes here</p>
+                    </a>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-5 mt-5 me-5">
+                    <li class="nav-item">
+                        <a class="nav-link active text-info rounded-pill me-5" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white rounded-pill me-5" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white rounded-pill me-5" href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white rounded-pill me-5" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white rounded-pill me-5" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------------------------ End Nav --------------------------------->
+
+    <!------------------------ Start Header --------------------------------->
+    <header class="Header pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 w-100 mt-5">
+                    <div class="search-input d-flex justify-content-between position-relative">
+                        <input type="search" placeholder="Find your location..." id="Search"
+                            class="form-control rounded-pill">
+                        <button value="Find" id="submit" type="submit" class="rounded-pill bg-info">Find</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Weather-table mt-3 pt-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 w-100 m-auto">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="Monday">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span>Monday</span>
+                                            <span class="date">2 December</span>
+                                        </div>
+                                    </th>
+                                    <th class="Tuesday text-center">Tuesday</th>
+                                    <th class="Wednesday text-center">Wednesday</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body">
+                                <tr>
+                                    <td class="Monday-td">
+                                        <p class="cairo p-3">Cairo</p>
+                                        <p class="temp ps-3">16.1°C</p>
+                                        <span><img class="p-3" src="./113 (1).jpg" alt="moon"></span>
+                                        <p class="text-info ps-3">Clear</p>
+                                        <span class="icon-monday"><img src="./icon-umberella.png" alt="umberella">
+                                            20%</span>
+                                        <span class="icon-monday"><img src="./icon-wind.png" alt="wind"> 18km/h</span>
+                                        <span class="icon-monday"><img src="./icon-compass.png" alt="compass">
+                                            East</span>
+                                    </td>
+                                    <td class="Tuesday-td text-center">
+                                        <div class="pt-5">
+                                            <span><img src="./113 (1).png" alt="sun"></span>
+                                            <p class="text-white fs-3">21.6°C</p>
+                                            <p class="temp-day">14.1o</p>
+                                            <p class="text-info">Sunny</p>
+                                        </div>
+                                    </td>
+                                    <td class="Wednesday-td text-center">
+                                        <div class="pt-5">
+                                            <span><img src="./113 (1).png" alt="sun"></span>
+                                            <p class="text-white fs-3"> 22.1°C</p>
+                                            <p class="temp-day">13.9o</p>
+                                            <p class="text-info">Sunny</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!------------------------ End Header --------------------------------->
+
+    <!------------------------ Start Footer --------------------------------->
+    <footer class="footer pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="email-input  position-relative">
+                        <input type="text" placeholder="Enter your email to subscribe..." id="email"
+                            class="form-control rounded-pill">
+                        <button value="email" id="submit" type="submit" class="rounded-pill bg-info">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="social-icons d-flex justify-content-center align-items-center">
+                        <a href="#" class="icon-wrapper d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-facebook-f fs-5"></i>
+                        </a>
+                        <a href="#" class="icon-wrapper d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-twitter fs-5"></i>
+                        </a>
+                        <a href="#" class="icon-wrapper d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-google-plus fs-5"></i>
+                        </a>
+                        <a href="#" class="icon-wrapper d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-pinterest fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <p class="small pt-3 pb-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!------------------------ End Footer --------------------------------->
+
+    <!---------------------Scribt-------------------->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/Main.js"></script>
+    <!---------------------Scribt-------------------->
+
+</body>
+
+</html>
+****************************************************
+CSS
+****************************************************
+/******************* Start Nav **************************/
+.navbar {
+    background-color: #1E202B !important;
+}
+.cloud-icon img {
+    width: 67px;
+}
+.tagline {
+    font-size: 10px;
+    color: #B0C1BE !important;
+}
+.nav-link.active {
+    border: 2px solid #009AD8;
+    padding: 3px 10px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.nav-link:hover {
+    border: 2px solid #009AD8;
+    color: #009AD8 !important;
+    padding: 3px 10px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.nav-link {
+    padding: 5px 10px;
+    border: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+/******************* End Nav **************************/
+/******************* Start Header **************************/
+.Header {
+    background-color: #1E202B; 
+    background-image: url('./../banner.png'); 
+    background-size: contain; 
+    background-position: top center; 
+    background-repeat: no-repeat; 
+    position: relative;
+    height: 100vh; 
+}
+#Search,#email{
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    box-shadow: none;
+}
+#Search::placeholder,#email::placeholder{
+   color: #757575;
+}
+#submit{
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    bottom: 2px;
+    padding: 0 40px;
+    color: white;
+    background-color: #009AD8 !important;
+}
+.Monday,.Wednesday{
+    background-color: #2D303D !important;
+    color: #BFBAA4 !important;
+}
+.Tuesday{
+    background-color: #222530 !important;
+    color: #BFBAA4 !important;
+}
+.Monday-td,.Wednesday-td{
+    background-color: #323544 !important;
+}
+.Tuesday-td{
+    background-color: #262936 !important;
+}
+table {
+    width: 100%;
+    table-layout: fixed; 
+    border-collapse: collapse;
+}
+table, th, td {
+    border: none;
+}
+.temp {
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+}
+.cairo{
+    color: #BFBAA4 !important;
+}
+.icon-monday,.temp-day{
+    color: #919297;
+    padding-right: 10px;
+}
+/******************* End Header **************************/
+/******************* Start Footer **************************/
+footer{
+    background-color: #262936;
+}
+.small{
+    color: #BFC1BF;
+    font-size: 14px;
+}
+.social-icons {
+    gap: 8px; 
+}
+.icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    background-color: #1E202B; 
+    transition: all 0.3s ease-in-out; 
+}
+a {
+    text-decoration: none !important;
+}
+.icon-wrapper:hover {
+    background-color: #009AD8; 
+}
+
+.icon-wrapper:hover i {
+    color: white; 
+}
+/******************* End Footer **************************/
+-------------------------------------------------------
+JS
+-------------------------------------------------------
+document.querySelector("#Search").addEventListener("input" , function(){
+    let searchNbt = document.querySelector("#Search").value;
+    getrecipes (searchNbt);
+})
+
+let allrecipes = []
+
+getrecipes()
+
+function getrecipes(term) {
+    let myHttp = new XMLHttpRequest();
+    myHttp.open("", `${term}`);
+    myHttp.send();
+    myHttp.responseType = "json"
+
+
+    myHttp.addEventListener("load", function () {
+        if (myHttp.status >= 200 && myHttp.status < 300) {
+            allrecipes = myHttp.response.recipes;
+            displayData()
+        }
+    })
+}
+
+function displayData() {
+    let cartona = ""
+    for (let i = 0; i < allrecipes.length; i++) {
+        cartona +=
+            `
+       <div class="recipes-table mt-3 pt-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 w-100 m-auto">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="Monday-td">
+                                        <p class="cairo p-3"> ${allrecipes[i]} </p>
+                                        <p class="temp ps-3"> ${allrecipes[i]} </p>
+                                        <span><img class="p-3" src=" ${allrecipes[i]} " alt="moon"></span>
+                                        <p class="text-info ps-3"> ${allrecipes[i]} </p>
+                                        <span class="icon-monday"><img src="./icon-umberella.png" alt="umberella">
+                                            20%</span>
+                                        <span class="icon-monday"><img src="./icon-wind.png" alt="wind"> 18km/h</span>
+                                        <span class="icon-monday"><img src="./icon-compass.png" alt="compass">
+                                            East</span>
+                                    </td>
+                                    <td class="Tuesday-td text-center">
+                                        <div class="pt-5">
+                                            <span><img src=" ${allrecipes[i]} " alt="sun"></span>
+                                            <p class="text-white fs-3"> ${allrecipes[i]} </p>
+                                            <p class="temp-day"> ${allrecipes[i]} </p>
+                                            <p class="text-info"> ${allrecipes[i]} </p>
+                                        </div>
+                                    </td>
+                                    <td class="Wednesday-td text-center">
+                                        <div class="pt-5">
+                                            <span><img src=" ${allrecipes[i]} " alt="sun"></span>
+                                            <p class="text-white fs-3"> ${allrecipes[i]} </p>
+                                            <p class="temp-day"> ${allrecipes[i]} </p>
+                                            <p class="text-info"> ${allrecipes[i]} </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       `
+    }
+    document.getElementById("table-body").innerHTML = cartona;
+}

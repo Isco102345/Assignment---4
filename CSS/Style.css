@@ -1,0 +1,183 @@
+/* ****************** Start Nav **************************/
+.navbar {
+    background-color: #1E202B !important;
+}
+.cloud-icon img {
+    width: 67px;
+}
+.tagline {
+    font-size: 10px;
+    color: #B0C1BE !important;
+}
+.nav-link.active {
+    border: 2px solid #009AD8;
+    padding: 3px 10px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.nav-link:hover {
+    border: 2px solid #009AD8;
+    color: #009AD8 !important;
+    padding: 3px 10px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.nav-link {
+    padding: 5px 10px;
+    border: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+/******************* End Nav **************************/
+/******************* Start Header **************************/
+.Header {
+    background-color: #1E202B; 
+    background-image: url('./../banner.png'); 
+    background-size: contain; 
+    background-position: top center; 
+    background-repeat: no-repeat; 
+    position: relative;
+}
+#Search,#email{
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    box-shadow: none;
+}
+#Search::placeholder,#email::placeholder{
+   color: #757575;
+}
+#submit{
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    bottom: 2px;
+    padding: 0 40px;
+    color: white;
+    background-color: #009AD8 !important;
+}
+/* .Weather-table {
+    margin-top: 3rem;
+    padding-top: 2rem;
+} */
+/* .weather-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 1rem;
+} */
+.day-first {
+    /* padding: 1rem; */
+    /* border-radius: 10px; */
+    padding: 1px;
+    color: #BFBCAB !important;
+    background-color: #323544;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between; 
+}
+.col-lg-4, .col-md-6, .col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.day-second{
+    /* padding: 1rem; */
+    /* border-radius: 10px; */
+    
+    color: #BFBCAB !important;
+    background-color: #262936;
+}
+.temp {
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+}
+
+.cairo {
+    color: #BFBAA4 !important;
+}
+
+.icon-monday, .temp-day {
+    color: #919297;
+    padding-right: 10px;
+}
+.text-info {
+    color: #919297;
+}
+.date {
+    font-size: 0.8rem;
+    color: #BFBAA4;
+}
+.text-center {
+    text-align: center;
+}
+.Wednesday,.Sunday {
+    background-color: #262936;
+    padding: 1px;
+}
+.bg-tues,.bg-wed{
+    position: relative;
+    bottom: 47px;
+}
+.bg-first,.bg-wed{
+    background-color: #2D303D; 
+    width: 100%;
+    padding: 10px;
+}
+.bg-tues{
+    background-color: #222530;
+    width: 100%;
+    padding: 10px;
+}
+/******************* End Header **************************/
+/******************* Start Media **************************/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .col-md-6 {
+        flex: 20 0 auto;
+        width: 52%;
+    }
+}
+/******************* End Media **************************/
+/******************* Start Footer **************************/
+footer{
+    background-color: #262936;
+}
+.small{
+    color: #BFC1BF;
+    font-size: 14px;
+}
+.social-icons {
+    gap: 8px; 
+}
+.icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    background-color: #1E202B; 
+    transition: all 0.3s ease-in-out; 
+}
+a {
+    text-decoration: none !important;
+}
+.icon-wrapper:hover {
+    background-color: #009AD8; 
+}
+
+.icon-wrapper:hover i {
+    color: white; 
+}
+/******************* End Footer ************************* */
