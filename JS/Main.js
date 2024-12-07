@@ -22,9 +22,10 @@ async function getWeather(city) {
             let data = await response.json();
             displayData(data.forecast.forecastday, city);
 
-        } else {
-            alertMsg.classList.remove("d-none")
-        }
+        } 
+        // else {
+        //     alertMsg.classList.remove("d-none")
+        // }
     }
     catch (error) {
         alertMsg.classList.remove("d-none")
